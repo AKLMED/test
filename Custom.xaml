@@ -1,0 +1,67 @@
+﻿<local:MyCard Title="注册与登录" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="130" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="新玩家注册" EventType="打开网页" EventData="https://login.mc-user.com:233/db28675623b611ee92e7e354f9e58e19/loginreg" />
+            <local:MyButton Margin="0,0,10,0" Width="130" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="玩家登录" EventType="打开网页" EventData="https://login.mc-user.com:233/account/login" ToolTip="必须先注册才能登录哦！" />
+            <local:MyButton Margin="0,0,10,0" Width="130" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="管理员登录" EventType="打开网页" EventData="https://login.mc-user.com:233/server/login" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="游戏公告" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold"
+                    Text="当前客户端版本: 1.0.1" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="客户端更新请留意QQ群公告" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="登录方式" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="请使用Minecraft统一通行证方式登录" />
+        <local:MyHint IsWarn="False"
+                    Text="路径：版本设置 -> 设置 -> 服务器 -> 第三方登录：统一通行证" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="服务器ID" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="点击按钮将服务器ID复制到剪切板" />
+        <local:MyButton Margin="0,0,10,0" Width="130" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                    Text="复制服务器ID" EventType="复制文本" EventData="db28675623b611ee92e7e354f9e58e19" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="封禁玩家" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="名称: test    时长: 永久    原因: 测试账号" />
+        <local:MyHint Text="请勿私自安装模组，一经发现封号7~30天！&#xA;请勿使用第三方作弊工具，一经发现封禁处理！" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="友情链接" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="-5,2,-5,8"
+		            Logo="https://github.com/favicon.ico" Title="Github" Info="Let's build from here" 
+		            EventType="打开网页" EventData="https://www.github.com/" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Logo="https://baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道"
+		            EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Logo="https://www.mcbbs.net/favicon.ico" Title="MCBBS" Info="国内最大的我的世界论坛"
+		            EventType="打开网页" EventData="https://www.mcbbs.net/" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科" Info="最大的Minecraft中文MOD百科"
+		            EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Logo="PCL/th.png" Title="Minecraft" Info="Minecraft官方"
+		            EventType="打开网页" EventData="https://www.minecraft.net/zh-hans" Type="Clickable" />
+        <local:MyListItem Margin="-5,2,-5,8"
+                    Logo="https://www.curseforge.com/favicon.ico" Title="CurseForge" Info="国外知名模组下载网站"
+		            EventType="打开网页" EventData="https://www.minecraft.net/zh-hans" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
